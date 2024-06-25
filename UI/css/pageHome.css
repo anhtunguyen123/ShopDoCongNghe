@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* css head */
+#menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to right, #151999 30%, #ff99cc 100%) !important;
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+
+#menu a{
+    text-decoration: none;
+}
+
+#menu_Shop {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#logoShop {
+    width: 80px;
+    height: 50px;
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH9zCb3_4gcRxxnEdSMg0A7bqb0gkdclWrB4gXar2aJA&s');
+    background-size: cover;
+    background-repeat: none;
+    margin-right: 10px;
+}
+
+#titleShop p {
+    font-size: 15px;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: none;
+    color:aqua;
+}
+
+#menu_search{
+    display: flex;
+}
+
+#menu_search input {
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 50px;
+    width: 230px;
+    border: none;
+    
+}
+#btSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height:40px;
+    cursor: pointer;
+    background-color: aqua;
+    border: none;
+}
+
+#menu_cart i {
+    background-color: aqua;
+    margin-left: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+}
+
+#qty_span {
+    display: none;
+    position: absolute;
+    top:7px;
+    right: 672px;
+    background: #ffe300;
+    color: #fff;    
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+#menu_h_cart{
+    margin-left: 10px;
+    display: flex;
+}
+
+#text_Cart_big{
+    margin-left: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+#text_Cart_small{
+    font-size: 13px;
+}
+
+#menu_h_phone{
+    display: flex;
+    margin-left: 50px;
+}
+
+#menu_phone i {
+    background-color: aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+}
+
+#text_phone_big{
+    margin-left: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#text_phone_small{
+    font-size: 13px;
+}
+
+#menu_h_address{
+    display: flex;
+    margin-left: 50px;
+}
+
+#menu_address i {
+    background-color: aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+}
+
+#text_address_big{
+    margin-left: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#text_address_small{
+    font-size: 13px;
+}
+
+/* Css menu */
+#subcategory ul.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#subcategory ul.nav > li {
+    position: relative;
+}
+
+.has-submenu {
+    cursor: pointer;
+}
+
+#subcategory ul.nav > li > a {
+    text-transform: uppercase;
+    color: red;
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+#subcategory ul.nav li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+#subcategory ul.nav li a {
+    padding-top: 20px;
+    line-height: 20px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#subcategory ul.nav .sub-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left:100%;
+    width: 200px;
+    background-color: #eee;
+    padding: 5px 0;
+    z-index: 100;
+    background-color:White;
+}
+
+#subcategory ul.nav li:hover > .sub-menu {
+    display: block;
+}
+
+#titleproduct{
+    background-color:#7d7878;
+    color:#fff;
+    font-weight: 900;
+    padding: 10px;
+}
+
+#titleproduct i{
+    margin-left: 10px;
+}
+
+#subcategory > ul.nav > li:hover {
+    background-color: #413b49;
+    border-left: 10px solid #fff;
+    color: aqua;
+}
+
+#subcategory ul.nav li ul.sub-menu li a{
+    margin-left: 10px;
+}
+
+#subcategory ul.nav li ul.sub-menu li a:hover {
+    color: #0000FF; 
+}
+
+#productPortfolio{
+    width: 370px;
+    height: 411px;
+    background-color: rgba(81, 75, 88, .3);
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.has-submenu > i{
+    margin-left: 10px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    z-index: 99;
+}
+
+#advertisement {
+    overflow: hidden;
+    width: 100%;
+    height: 410px;
+    position: relative;
+}
+
+#advertisement a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+#advertisement img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes fade1 {
+    0% { opacity: 1; }
+    33.33% { opacity: 1; }
+    66.66% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade2 {
+    0% { opacity: 0; }
+    33.33% { opacity: 1; }
+    66.66% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade3 {
+    0% { opacity: 0; }
+    66.66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#advertisement a:nth-child(1) {
+    animation: fade1 8s infinite;
+}
+
+#advertisement a:nth-child(2) {
+    animation: fade2 9s infinite;
+}
+
+#advertisement a:nth-child(3) {
+    animation: fade3 9s infinite;
+} 
+
+#content-wrapper {
+    display: flex;
+}
+
+/* css product */
+.newProduct{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#title_newProduct{
+    background: linear-gradient(to right, #74f6dd 0%, #fff 110%) !important;
+    color:black;
+    padding: 10px;
+}
+
+.login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00BFFF; /* Màu xanh dương nhạt */
+    color: white; /* Màu chữ trắng */
+    font-size: 16px; /* Kích thước chữ */
+    border: none;
+    border-radius: 5px; 
+    text-decoration: none; 
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s; 
+    margin-left: 50px;
+}
+
+.login-button:hover {
+    background-color: #1E90FF; /* Màu xanh dương đậm hơn khi rê chuột */
+    transform: scale(1.05); /* Tăng kích thước khi rê chuột */
+}
+
+#login-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#login-info #welcome-message {
+    font-size: 16px;
+    color: white;
+    margin-left: 30px;
+}
+
+#login-info #logoutButton {
+    padding: 10px 20px;
+    background-color: #FF4500; /* Màu đỏ cam */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-info #logoutButton:hover {
+    background-color: #FF6347; /* Màu đỏ cam nhạt hơn khi rê chuột */
+}
+
+
+/* Kiểu dáng cho Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+    
+#addShopButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+#addShopButton:hover {
+    background-color: #45a049;
+}
+
+#confirmAddShopButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirmAddShopButton:hover {
+    background-color: #45a049;
+}
+
+/* Kiểu dáng cho Modal thông báo thành công */
+#successModal {
+    display: none; /* Ẩn modal theo mặc định */
+    position: fixed; /* Đặt modal cố định */
+    z-index: 1000; /* Đảm bảo modal luôn ở trên cùng */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Đảm bảo nếu nội dung quá dài, sẽ có thanh cuộn */
+    background-color: rgba(0,0,0,0.4); /* Nền mờ phía sau modal */
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    align-items: center; /* Canh giữa theo chiều dọc */
+}
+
+#successModal .modal-content {
+    background-color: #fff; /* Màu nền của modal */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px; /* Đặt chiều rộng tối đa cho modal */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#successModal .modal-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#successModal .modal-footer {
+    margin-top: 20px;
+}
+
+#successModal .modal-footer button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Màu xanh lá cây */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#successModal .modal-footer button:hover {
+    background-color: #45a049;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+   
+}
+
+td {
+    text-align: center; 
+
+}
+
+td button {
+    display: block;
+    margin: 0 auto;
+}
+#text_Cart_big:hover{
+    color: red;
+}
+
+#tableSanPham button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #tableSanPham button:hover {
+    background-color: #45a049;
+  }
+  

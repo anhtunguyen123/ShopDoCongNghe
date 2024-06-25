@@ -1,0 +1,29 @@
+#tableGioHang {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+#tableGioHang th, #tableGioHang td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-left: 0px;
+}
+
+#tableGioHang th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+#tableGioHang button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #tableGioHang button:hover {
+    background-color: #45a049;
+  }
+  

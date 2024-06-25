@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pageHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://down-vn.img.susercontent.com/file/438a723004b87c4bf25c2f8fbd74d3d0" type="image/x-icon" />
+    <title>Shop Đồ Công nghệ | Chuyên gia Phụ kiện công nghệ thông minh giá rẻ | shopdocongnghe.com</title>
+    <div id="header_menu">
+        <div id="menu">
+            <a href="pageProduct.html">
+            <div id="menu_Shop">
+                <div id="logoShop"></div>
+                <div id="titleShop">
+                    <P>SHOP ĐỒ CÔNG NGHỆ<br>Công nghệ thông minh</P>
+                </div>
+            </div>
+            </a>
+        <div id="menu_search">
+            <input type="text" placeholder="Bạn cần tìm gì hôm nay?">
+            <button id="btSearch"><i class="fas fa-search"></i></button>
+        </div>
+        <a href="pageGioHang.html">
+        <div id="menu_h_cart">
+            <div id="menu_cart"><i class="fa fa-shopping-cart"></i><span id="qty_span">0</span></div>
+            <span id="text_Cart_big">Giỏ Hàng <br><span id="text_Cart_small">Sản Phẩm</span></span>
+        </div> 
+         </a>
+        <div id="menu_h_phone">
+            <div id="menu_phone"><i class="fa fa-phone"></i></div>
+            <span id="text_phone_big">039.708.4051 <br> <span id="text_phone_small">Hotline mua hàng</span></span>
+        </div>
+        <div id="menu_h_address">
+            <div id="menu_address"><i class="fa fa-map-marker"></i></div>
+            <span id="text_address_big">Xem địa chỉ<br> <span id="text_address_small">Mở cửa: 8:00-22:00</span></span>
+        </div>
+        <div id="login-info" style="display: none;">
+            <span id="welcome-message"></span>
+            <button id="logoutButton">Logout</button>
+        </div>
+        <button id="loginButton" class="login-button" onclick="location.href='pageLogin.html'">Login</button>
+        
+        <button id="addShopButton">Thêm shop</button>
+        <!-- Modal thêm shop -->
+    <div id="addShopModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAddShopModal">&times;</span>
+            <h2>Thêm shop mới</h2>
+            <form id="addShopForm">
+                <div class="form-group">
+                    <label for="shopName">Tên shop</label>
+                    <input type="text" id="shopName" name="shopName" required>
+                </div>
+                <div class="form-group">
+                    <label for="shopPhone">Số điện thoại shop</label>
+                    <input type="text" id="shopPhone" name="shopPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="shopAddress">Địa chỉ Shop</label>
+                    <input type="text" id="shopAddress" name="shopAddress" required>
+                </div>
+                <button type="button" id="confirmAddShopButton">Xác nhận</button>
+            </form>
+            <div id="errorMessage" class="error-message"></div>
+        </div>
+    </div>        
+        </div>
+        <div id="content-wrapper">
+        <div id="productPortfolio">
+            <div id="product">
+                <div id="titleproduct"><i class="fa-solid fa-list"></i> Danh mục sản phẩm</div>
+                <div id="subcategory">
+                    <ul class="nav">
+                        <li class="has-submenu"><i class="fa-solid fa-phone"></i>Dô chơi công nghệ
+                            <ul class="sub-menu">
+                                <li><a href="#">máy tính thông minh</a></li>
+                                <li><a href="#">c</a></li>
+                                <li><a href="#">a</a></li>
+                                <li><a href="#">d</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu"><i class="fa-solid fa-mobile-button"></i>Phụ kiện điện thoại
+                            <ul class="sub-menu">
+                                <li><a href="#">f</a></li>
+                                <li><a href="#">h</a></li>
+                                <li><a href="#">g</a></li>
+                                <li><a href="#">x</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu"><i class="fa-solid fa-laptop-medical"></i>Thiết bị gia dụng thông minh
+                            <ul class="sub-menu">
+                                <li><a href="#">f</a></li>
+                                <li><a href="#">h</a></li>
+                                <li><a href="#">g</a></li>
+                                <li><a href="#">x</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu"><i class="fas fa-headphones-alt"></i>Âm thanh số
+                            <ul class="sub-menu">
+                                <li><a href="#">f</a></li>
+                                <li><a href="#">h</a></li>
+                                <li><a href="#">g</a></li>
+                                <li><a href="#">x</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <div id="advertisement">
+            <a href="#"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3H2b2OBXPwRbgqpeR6PP24ub0MHFAColsXshbqbjdaw&s"></a>
+            <a href="#"><img src="https://intphcm.com/data/upload/banner-la-gi.jpg"></a>
+            <a href="#"><img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/474067lqR/anh-mau-banner-thiet-bi-dien-may_033704340.png"></a>
+        </div>
+        </div>
+    </div>
+</head>
+<body>
+    <div class="container">
+        <div class="newProduct">
+            <div id="title_newProduct">
+                <h2>HÀNG HOT</h2>
+                
+            </div>
+            <table id="tableSanPham">
+                <tbody>
+                </tbody>
+            </table>  
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal thông báo thành công -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSuccessModal">&times;</span>
+            <h2>Thông báo</h2>
+            <p id="successMessage">Tạo shop thành công!</p>
+            <div class="modal-footer">
+                <button id="successModalOkButton">OK!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../frontEnd/pageProduct.js"></script>
+</body>
+</html>
